@@ -2,7 +2,7 @@
     (function($) {
     "use strict"; // Start of use strict
 
-    // Smooth scrolling using jQuery easing
+    // Smooth scrolling using jQuery easin
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -16,7 +16,7 @@
       }
     });
 
-    // Scroll to top button appear
+    // Scroll to top button appear //
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
       if (scrollDistance > 50) {
@@ -37,7 +37,7 @@
       offset: 80
     });
 
-    // Collapse Navbar
+    // Collapse Navbar //
     var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
@@ -45,12 +45,12 @@
         $("#mainNav").removeClass("navbar-shrink");
       }
     };
-    // Collapse now if page is not at top
+    // Collapse now if page is not at top //
     navbarCollapse();
-    // Collapse the navbar when page is scrolled
+    // Collapse the navbar when page is scrolled //
     $(window).scroll(navbarCollapse);
 
-    // Floating label headings for the contact form
+    // Floating label headings for the contact form //
     $(function() {
       $("body").on("input propertychange", ".floating-label-form-group", function(e) {
         $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
