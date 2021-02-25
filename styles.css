@@ -1,3 +1,5 @@
+/*     GLOBAL         */
+
 * {
   margin: 0; 
   padding: 0; 
@@ -7,8 +9,86 @@ body {
   height: 300vh; 
 }
 
+a {
+  text-decoration: none;
+}
+
+
+
+a {
+  font-weight: lighter;
+  color: white;
+}
+
+
+
+
+/*     MAIN SECTION     */
+
 .section-main {
-  height: 100vh; 
-  background: url('mountain-main.jpg')no-repeat center center fixed;
+  height: 40rem; 
+  background: url('city-main.jpg')no-repeat bottom center fixed;
   background-size: cover;
 }
+
+#nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#nav-logo {
+  font-size: 20px;
+}
+
+#nav-items {
+  justify-content: space-between;
+}
+
+#nav-items > a {
+  margin: 0 25px;
+  font-size: 12px;
+  
+
+}
+
+h1 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: 'Average', serif;
+  text-align: center;
+  margin-top: 18vh;
+}
+
+
+
+/*     PORTFOLIO     */
+
+.portfolio-section {
+  height: 80vh;
+}
+
+#portfolio-text {
+  color: black;
+  margin-top: 50px;
+}
+
+
+
+/*     RESUME        */
+
+
+/*     LIFE           */
+
+
+/*     CONTACT        */
