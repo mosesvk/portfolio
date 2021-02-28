@@ -1,3 +1,11 @@
+/*    COLOR SCALE     */
+
+/* #fff3e6 --> Tan  */
+/* #2168eb --> Blue  */
+/* #1e212d --> Black  */
+
+
+
 /*     GLOBAL         */
 
 * {
@@ -7,6 +15,7 @@
 
 body {
   height: 300vh; 
+  /* margin: 0; */
 }
 
 a {
@@ -46,6 +55,11 @@ a:hover {
   font-family: 'Oleo Script', cursive;
 }
 
+#nav-logo > a {
+    color: #e9cdaf;
+    /* color: #2168eb; */
+}
+
 #nav-items {
   justify-content: space-between;
   letter-spacing: 1px;
@@ -68,29 +82,32 @@ a:hover {
 .start-button {
   width: 50px;
   height: 45px;
+  background-color: #fff3e6;
+  color: #1e212d;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid #fff3e6;
   border-radius: 7px;
-  padding: 20px 40px;
+  padding: 20px 25px;
+  font-family: 'Average', serif;
+  opacity: .7;
 }
 
 .start-button:hover {
-  background-color:white;
+  background-color:#e9d4be;
+  color: #2168eb;
   transition: .7s;
-  color: black;
+  font-weight: 800;
   text-decoration: none;
+  font-family: 'Average', serif;
+  opacity: 1;
 }
 
-.start-text {
-  font-size: 15px;
-  font-family: 'Average', serif;
-}
 
 h1 {
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 3rem;
-  margin: 0 0 25px 0;
+  margin: 0 0 50px 0;
   text-align: center;
 }
 
@@ -98,6 +115,8 @@ h2 {
   color: white;
   font-family: 'Average', serif;
   text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
 
 }
 
@@ -119,21 +138,17 @@ h2 {
 
 .divider-line-header {
   display: flex;
-  margin: 5px auto 50px;
+  margin: auto auto 50px;
   justify-content: center;
-  align-items:baseline;
+  align-items:center;
+  flex-direction: column;
 }
 
 hr {
-  width: 5em;
-  height: 5px;
+  width: 10em;
+  height: 1px;
   background: black;
   margin-top: 5px;
-}
-
-#dot-img {
-  height: 15px;
-  margin: auto 7px;
 }
 
 .portfolio-gallery {
@@ -142,8 +157,20 @@ hr {
   flex-wrap: wrap;
 }
 
-.portfolio-gallery > div {
-  margin-bottom: 15px;
+.portfolio-div {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  border-radius: 15px;
+  width: 225px;
+}
+
+.portfolio-item:hover {
+  opacity: .25;
+  transition: .5s;
 }
 
 
