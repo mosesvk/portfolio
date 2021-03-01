@@ -9,5 +9,8 @@ Markup : <details>
 Motivation
 ----------
 This project is to help display/improve my code to find employment, build fun project, and help family and friends. 
+My love for solving problems is paramount in my coding experience and I strive to learn and develop skills that will help enhance this.
 
 
+Main Screenshots
+----------------
