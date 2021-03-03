@@ -36,7 +36,7 @@ a:hover {
 
 .section-main {
   height: 40rem; 
-  background: url('city-main.jpg')no-repeat bottom center fixed;
+  background: url('./images/mountain-saltLake.jpg')no-repeat bottom center fixed;
   background-size: cover;
 }
 
@@ -44,10 +44,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin: auto 35px;
-  padding-top: 30px;
+  padding-top: 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  align-items: baseline;
 }
 
 #nav-logo {
@@ -65,9 +66,15 @@ a:hover {
   letter-spacing: 1px;
 }
 
-#nav-items > a {
+.nav-item-link {
   margin: 0 25px;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.nav-item-link:hover {
+  color: #ebc69e;
+  text-decoration: none;
+  transition: 0s;
 }
 
 .nav-header {
@@ -94,7 +101,7 @@ a:hover {
 
 .start-button:hover {
   background-color:#e9d4be;
-  color: #2168eb;
+  color:#1e212d;
   transition: .7s;
   font-weight: 800;
   text-decoration: none;
@@ -159,13 +166,24 @@ hr {
 
 .portfolio-div {
   margin: 15px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 25px;
+  box-shadow: 2px 2px 75px 20px #e9d4be;
+  border-radius: 10px;
+  /* background-color: #e9d4be; */
 }
+
+.portfolio-div > a {
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
 
 .portfolio-item {
   border-radius: 15px;
-  width: 225px;
+  width: fit-content;
 }
 
 .portfolio-item:hover {
