@@ -29,6 +29,55 @@ body {
   background-size: cover;
 }
 
+
+/* Style NavBar content*/
+a.icon {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  #nav-items a {
+    display: none;
+    padding-bottom: 1em;
+  }
+  
+  a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #nav-items.responsive {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: #313236;
+    width: 100%;
+    transition: .5s ease-out;
+  }
+  
+  a.icon {
+    position: relative;
+    font-size: 20px;
+    background-color: #e9cdaf;
+    width: 35px;
+    text-align: center;
+    height: 27px;
+    align-items: baseline;
+  }
+
+  .fa {
+    color: black
+  }
+  
+  #nav-items.responsive a {
+    display: block;
+    text-align: left;
+    padding: 1em 0;
+  }
+}
+
+
 #nav-bar {
   width: 100vw;
   display: flex;
@@ -40,6 +89,27 @@ body {
   z-index: 1;
   background: transparent;
 }
+
+@media screen and (max-width: 750px){
+  #nav-bar {
+    padding: 10px 35px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  #nav-bar {
+    background-color: #313236;
+    padding: 7px 35px;
+  }
+}
+
+@media screen and (min-height: ){
+  #nav-bar {
+    background-color: #313236;
+    padding: 7px 35px;
+  }
+}
+
 
 #nav-logo {
   font-size: 35px;
