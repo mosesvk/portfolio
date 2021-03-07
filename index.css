@@ -33,6 +33,12 @@ body {
 /* Style NavBar content*/
 a.icon {
   display: none;
+  border-radius: 5px;
+  line-height: 27px;
+}
+
+.fa {
+  line-height: 10px;
 }
 
 @media screen and (max-width: 750px) {
@@ -78,7 +84,7 @@ a.icon {
 }
 
 
-#nav-bar {
+header {
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -90,21 +96,26 @@ a.icon {
   background: transparent;
 }
 
+.nav-scroll {
+  background-color: #313236;
+  padding: 7px 35px;
+}
+
 @media screen and (max-width: 750px){
-  #nav-bar {
+  header {
     padding: 10px 35px;
   }
 }
 
 @media screen and (max-width: 750px){
-  #nav-bar {
+  header {
     background-color: #313236;
     padding: 7px 35px;
   }
 }
 
 @media screen and (min-height: ){
-  #nav-bar {
+  header {
     background-color: #313236;
     padding: 7px 35px;
   }
@@ -232,7 +243,7 @@ hr {
   color: #1e212d;
 }
 
-.fab:hover {
+.social-link:hover {
   opacity: .5;
 }
 
@@ -240,6 +251,7 @@ hr {
   display: inline-flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .portfolio-div {
@@ -271,10 +283,57 @@ hr {
 
 
 
-/*     RESUME        */
+/*     SKILLS      */
 
-.skills-section {
-  height: 40vh;
+.skills-container {
+  margin: auto 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* ICON DEFAULT LAYOUT */
+.skills-icon {
+  font-size: 90px;
+}
+
+@media all and (max-width: 1000px) {
+  .skills-icon {
+    font-size: 75px;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .skills-icon {
+    font-size: 55px;
+  }
+}
+@media all and (max-width: 550px) {
+  .skills-icon {
+    font-size: 35px;
+  }
+  .skills-container {
+    margin: 0;
+  }
+}
+
+.fa-css3-alt {
+  color: #4071f8ee
+}
+.fa-html5 {
+  color: #d45252
+}
+.fa-git-square {
+  color: #d48252
+}
+.fa-js-square {
+  color: #cecc6a;
+}
+.fa-react {
+  color: #3c92e2;
+}
+.fa-node-js {
+  color: #6bcf5a;
 }
 
 

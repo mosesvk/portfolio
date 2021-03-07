@@ -43,3 +43,28 @@ portfolioSection.addEventListener('click', function(){
 
 //Responsive Navbar when Hamburger item shows and we click on it to show nav-items
 
+
+
+//Responsive Navbar -- changes to solid background once it reaches the h2 tag on the main section.
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".main-h2");
+
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scroll");
+    } else {
+      header.classList.remove("nav-scroll");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
