@@ -34,7 +34,7 @@ function smoothScroll(target, duration){
   requestAnimationFrame(animation);
 }
 // Assigns the variable to the start button
-var portfolioSection = document.querySelector(".start-button, #portfolio");
+var portfolioSection = document.querySelector(".start-button");
 // Smooth scrolling when we CLICK on the start button
 portfolioSection.addEventListener('click', function(){
   smoothScroll('.portfolio-section', 1250)
