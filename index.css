@@ -285,18 +285,48 @@ hr {
 
 
 
-/*     SKILLS      */
+/*     ABOUT-ME SECTION           */
 
-.skills-container {
-  margin: auto 80px;
+.about-section {
+  height: 80vh;
+  text-align: center;
+}
+
+.about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+/* about me/p  */
+.about-p {
+  width: 70%;
+}
+
+.img-fam-crop {
+  height: 275px;
+  margin-top: 30px;
+}
+
+.img-fam {
+  overflow: hidden;
+  width: 275px;
+  height: 350px; 
+  border-radius: 5px;
+  float: left;
 }
 
 
-/* ICON DEFAULT LAYOUT */
+/* about skills  */
 .skills-icon {
   font-size: 90px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media all and (max-width: 1000px) {
@@ -336,17 +366,6 @@ hr {
 }
 .fa-node-js {
   color: #6bcf5a;
-}
-
-
-
-
-
-/*     ABOUT-ME SECTION           */
-
-.about-section {
-  height: 80vh;
-  text-align: center;
 }
 
 
