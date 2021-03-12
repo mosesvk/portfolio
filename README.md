@@ -12,5 +12,4 @@ This project is to help display/improve my code to find employment, build fun pr
 My love for solving problems is paramount in my coding experience and I strive to learn and develop skills that will help enhance this.
 
 
-Main Screenshots
-----------------
+
